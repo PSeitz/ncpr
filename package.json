@@ -1,0 +1,41 @@
+{
+    "name": "ncpr",
+    "version": "1.0.0",
+    "description": "ncpr copies files from a glob to a target",
+    "main": "dist/index.js",
+    "types": "dist/index.d.ts",
+    "scripts": {
+        "prepublish": "tsc",
+        "build": "tsc",
+        "format": "npx prettier --write .",
+        "test": "jest --coverage"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/PSeitz/ncpr.git"
+    },
+    "bugs": {
+        "url": "https://github.com/PSeitz/ncpr/issues"
+    },
+    "homepage": "https://github.com/PSeitz/ncpr",
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "yargs": "^15.3.1",
+        "glob": "^7.1.6"
+    },
+    "devDependencies": {
+        "typescript": "^4.0.3",
+        "@types/glob": "^7.1.2",
+        "@types/jest": "^26.0.14",
+        "@types/node": "^14.0.14",
+        "@types/yargs": "^15.0.5",
+        "jest": "^26.5.3",
+        "prettier": "2.1.2",
+        "ts-jest": "^26.4.1",
+        "ts-node": "^8.10.2"
+    },
+    "bin": {
+        "ncpr": "./dist/index.js"
+    }
+}
